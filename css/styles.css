@@ -1,0 +1,291 @@
+/*
+    Colors used
+    Background color (Light Blue): #add8e6
+    Text color (Black): #000000
+    Primary Color (Blue): #0000ff
+    Secondary Color (Purple): #800080
+
+    */
+
+:root {
+    --primary-color: #0000ff;
+    --secondary-color: #800080;
+    --black: #000000;
+    --light-blue: #add8e6;
+    --red: #ff0000;
+    --light-gray: #d3d3d3;
+    --font-weight: 700px;
+}
+
+
+body {
+    background-color: var(--light-blue);
+    color: var(--black);
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: var(--black);
+    font-size: 30px;
+    font-weight: var(--font-weight);
+}
+
+h2 {
+    color: var(--black);
+    font-size: 24px;
+    font-weight: var(--font-weight);
+}
+
+h3 {
+    color: var(--black);
+    font-size: 18px;
+    font-weight: var(--font-weight);
+}
+
+
+a {
+    color: var(--primary-color);
+}
+
+a:visited {
+    color: var(--primary-color);
+}
+
+a:hover,
+a:focus {
+    outline: 2px solid var(--primary-color);
+    text-decoration: none;
+}
+
+a:active {
+    color: red;
+}
+
+button {
+    background: none;
+    font-family: inherit;
+    background-color: var(--primary-color);
+    font-size: 16px;
+    color: var(--black);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 2px;
+    border-bottom: 2px solid rgba (0, 0, 0, 0.3);
+}
+
+button:hover,
+button:focus {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.button__secondary {
+    background-color: var(--secondary-color);
+    color: var(--black);
+}
+
+.navigation-list_item--active {
+    text-decoration: none;
+}
+
+.profile__portrait {
+    float: left;
+    width: 250px;
+    margin-right: 40px;
+    border-radius: 50%;
+}
+
+.page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.profile {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.page-header {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+.page-header__item {
+    flex: 0 1 200px;
+    height: 100px;
+}
+
+.page-header__item:last-child {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.navigation-list {
+    list-style-type: none;
+}
+
+.navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.grid_item {
+    background-color: var(--light-gray);
+    padding: 10px;
+}
+
+
+
+button,
+.button {
+    border: none;
+    display: inline-block;
+    font-family: inherit;
+    background-color: #357b70;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    transition: opacity 0.2s;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+@keyframes color-change {
+    0% {
+        fill: #edc655;
+    }
+
+    50% {
+        fill: #fcffad;
+    }
+
+    100% {
+        fill: #f76414;
+    }
+}
+
+.sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+/*short version for .sun
+.sun {
+    animation: 4s color-change infinite alternate linear;
+  }*/
+
+
+@keyframes cloud-move {
+    from {
+        transform: translate(0, 50px);
+    }
+
+    to {
+        transform: translate(200px, 50px);
+    }
+}
+
+.cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+/*Or the short way:
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}*/
+
+@keyframes cloud-move-reverse {
+    from {
+        transform: translate(446px, 48px);
+    }
+
+    to {
+        transform: translate(100px, 48px);
+    }
+}
+
+
+.cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+@media all and (max-width: 500px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .grid {
+        grid-gap: 10px;
+    }
+
+    .grid__item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    body {
+        background-color: magenta;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    body {
+        background-color: green;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    body {
+        background-color: orange;
+    }
+
+}
