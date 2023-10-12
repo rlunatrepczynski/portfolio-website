@@ -88,7 +88,8 @@ button:focus {
 }
 
 .navigation-list_item--active {
-    text-decoration: none;
+    background-color: plum;
+    text-decoration: none
 }
 
 .profile__portrait {
@@ -103,6 +104,11 @@ button:focus {
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+.social-media_item {
+    width: 30px;
+    height: 30px;
 }
 
 .profile {
