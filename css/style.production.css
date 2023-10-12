@@ -5,7 +5,6 @@
 * Browsers: last 4 version
 */
 
-
 /*
     Colors used
     Background color (Light Blue): #add8e6
@@ -90,6 +89,7 @@ button:focus {
 }
 
 .navigation-list_item--active {
+    background-color: plum;
     text-decoration: none;
 }
 
@@ -110,6 +110,11 @@ button:focus {
     -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
+}
+
+.social-media_item {
+    width: 30px;
+    height: 30px;
 }
 
 .profile {
