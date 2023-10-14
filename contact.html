@@ -38,7 +38,7 @@
   </header>
   <div>
     <h1>Contact</h1>
-    <div>
+    <div class="contact_div">
       643 West Ray Road <br>
       Chandler, AZ <br>
       <br>
@@ -46,23 +46,27 @@
       Skype <a href="skype:hello.renee">hello.renee</a> <br>
       <a href="mailto:reneelunat(at)gmail(dot)com">reneelunat@gmail.com</a>
       <br>
-      <br>
       <a href="mailto:reneelunat(at)gmail(dot)com">Contact Me</a>
     </div>
 
+    <div class="form_div">
+      <form action="#" method="post" id="contact-form">
 
-    <form action="" method="post" id="contact-form">
-      <label class="standard-label" for="contact-email">Email:</label>
-      <input type="email" id="contact-email" required>
+        <label class="standard-label" for="contact-name">Name</label>
+        <input type="text" id="contact-name" required> <br>
 
-      <label class="standard-label" for="contact-tel">Telephone:</label>
-      <input type="tel" id="contact-tel">
+        <label class="standard-label" for="contact-email">Email:</label>
+        <input type="email" id="contact-email" required> <br>
 
-      <label class="standard-label" for="contact-message">Message:</label>
-      <textarea maxlength="240" required id="contact-message"></textarea>
-      <input type="submit" value="Send message">
+        <label class="standard-label" for="contact-tel">Telephone:</label>
+        <input type="tel" id="contact-tel"> <br>
 
-    </form>
+        <label class="standard-label" for="contact-message">Message:</label>
+        <textarea maxlength="240" required id="contact-message"></textarea>
+        <input type="submit" value="Send message">
+
+      </form>
+    </div>
   </div>
   <footer class="page-footer">
     <p>Find me on</p>
