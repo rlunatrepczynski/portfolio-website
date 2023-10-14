@@ -30,6 +30,7 @@ h1 {
   color: var(--black);
   font-size: 30px;
   font-weight: var(--font-weight);
+  text-align: center;
 }
 
 h2 {
@@ -42,6 +43,24 @@ h3 {
   color: var(--black);
   font-size: 18px;
   font-weight: var(--font-weight);
+}
+
+p {
+  text-align: center;
+}
+
+table {
+  border: 2px solid black;
+  margin: auto;
+  text-align: center;
+}
+
+.form_div {
+  text-align: center;
+}
+
+.contact_div {
+  text-align: center;
 }
 
 a {
@@ -60,6 +79,10 @@ a:focus {
 
 a:active {
   color: red;
+}
+
+.button_div {
+  text-align: center;
 }
 
 button {
@@ -152,6 +175,8 @@ button:focus {
 .grid_item {
   background-color: var(--light-gray);
   padding: 10px;
+  text-align: center;
+  border: 5px solid purple;
 }
 
 button,
