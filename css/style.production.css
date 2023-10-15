@@ -306,7 +306,6 @@ button:focus,
 }
 
 /* Or the short way:
-    
     .cloud-front {
       animation: 30s cloud-move infinite alternate linear;
     } */
