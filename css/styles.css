@@ -55,12 +55,28 @@ table {
   text-align: center;
 }
 
+.code-div {
+  text-align: center;
+}
+
 .form_div {
   text-align: center;
 }
 
 .contact_div {
   text-align: center;
+}
+
+.cf-div {
+  border: 5px solid purple;
+  margin: auto;
+  width: 500px;
+  padding: 10px;
+  margin-right: 200px;
+}
+
+.about-div {
+  margin: 75px;
 }
 
 a {
@@ -120,6 +136,13 @@ button:focus {
   border-radius: 50%;
 }
 
+.contact-portrait {
+  float: left;
+  width: 250px;
+  border-radius: 50%;
+  margin-left: 350px;
+}
+
 .page-footer {
   clear: both;
   display: flex;
@@ -174,6 +197,7 @@ li a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
+  margin: 20px;
 }
 
 .grid_item {
