@@ -56,24 +56,27 @@ table {
   text-align: center;
 }
 
-.form_div {
-  text-align: center;
-}
-
-.contact_div {
-  text-align: center;
-}
-
-.cf-div {
-  border: 5px solid purple;
-  margin: auto;
-  width: 500px;
-  padding: 10px;
-  margin-right: 200px;
-}
-
 .about-div {
   margin: 75px;
+}
+
+.flex-container {
+  display: flexbox;
+  flex-direction: row;
+  text-align: center;
+}
+
+.border-div {
+  border: 5px solid purple;
+  width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.contact-portrait {
+  width: 300px;
+  margin: auto;
+  text-align: center;
 }
 
 a {
@@ -135,13 +138,6 @@ button:focus {
   width: 250px;
   margin-right: 40px;
   border-radius: 50%;
-}
-
-.contact-portrait {
-  float: left;
-  width: 250px;
-  border-radius: 50%;
-  margin-left: 350px;
 }
 
 .page-footer {
